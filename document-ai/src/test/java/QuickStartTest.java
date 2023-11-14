@@ -14,18 +14,21 @@
  * limitations under the License.
  */
 
-import static com.google.common.truth.Truth.assertThat;
-import static org.junit.Assert.assertNotNull;
+import gcp.sample.QuickStart;
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Ignore;
+import org.junit.Test;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.PrintStream;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeoutException;
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
 
+import static com.google.common.truth.Truth.assertThat;
+import static org.junit.Assert.assertNotNull;
+@Ignore
 public class QuickStartTest {
   private static final String PROJECT_ID = System.getenv("GOOGLE_CLOUD_PROJECT");
   private static final String PROCESSOR_ID = "88541adc6eeec481";

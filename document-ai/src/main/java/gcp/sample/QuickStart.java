@@ -36,7 +36,7 @@ public class QuickStart {
       throws IOException, InterruptedException, ExecutionException, TimeoutException {
     // TODO(developer): Replace these variables before running the sample.
     String projectId = "your-project-id";
-    String location = "your-project-location"; // Format is "us" or "eu".
+    String location = "us"; // Format is "us" or "eu".
     String processorId = "your-processor-id";
     String filePath = "path/to/input/file.pdf";
     quickStart(projectId, location, processorId, filePath);

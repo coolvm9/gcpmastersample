@@ -3,9 +3,7 @@ plugins {
 }
 
 group 'gcp.sample'
-version 'unspecified'
-
-
+version '0.0.1'
 
 repositories {
     mavenLocal()
@@ -21,6 +19,8 @@ dependencies {
     implementation 'com.github.spotbugs:spotbugs-annotations:4.5.0'
     testImplementation 'com.google.cloud:google-cloud-core:2.3.2'
     testImplementation 'junit:junit:4.13.2'
+    testRuntimeOnly("org.junit.vintage:junit-vintage-engine:5.10.1")
+
     testImplementation 'com.google.truth:truth:1.1.5'
     testImplementation 'com.google.cloud:google-cloud-core:2.3.2'
 }
@@ -33,7 +33,6 @@ group = 'com.example.documentai'
 version = '1.2.0'
 description = 'Google Document AI Snippets'
 java.sourceCompatibility = JavaVersion.VERSION_1_8
-
 
 
 tasks.withType(JavaCompile) {

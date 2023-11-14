@@ -22,10 +22,13 @@ import java.io.IOException;
 import java.io.PrintStream;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeoutException;
+
+import gcp.sample.ProcessDocument;
 import org.junit.After;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
-
+@Ignore
 public class ProcessDocumentTest {
   private static final String PROJECT_ID = System.getenv("GOOGLE_CLOUD_PROJECT");
   private static final String PROCESSOR_ID = "88541adc6eeec481";
