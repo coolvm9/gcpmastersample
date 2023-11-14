@@ -12,4 +12,5 @@ plugins {
 
 rootProject.name = 'gcpmastersample'
 include ('app','auth','storage')
+include 'document-ai'
 
