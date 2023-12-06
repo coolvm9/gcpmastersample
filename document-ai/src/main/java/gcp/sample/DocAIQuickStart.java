@@ -31,14 +31,14 @@ import java.util.List;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeoutException;
 
-public class QuickStart {
+public class DocAIQuickStart {
   public static void main(String[] args)
       throws IOException, InterruptedException, ExecutionException, TimeoutException {
     // TODO(developer): Replace these variables before running the sample.
-    String projectId = "your-project-id";
+    String projectId = "neat-vent-381323" ;//"your-project-id";
     String location = "us"; // Format is "us" or "eu".
-    String processorId = "your-processor-id";
-    String filePath = "path/to/input/file.pdf";
+    String processorId ="179ee6fc6cdfa20b" ;//"your-processor-id";
+    String filePath = "/Users/satyaanumolu/POCs/gcp/gcpmastersample/document-ai/resources/us_driver_license.pdf";
     quickStart(projectId, location, processorId, filePath);
   }
 

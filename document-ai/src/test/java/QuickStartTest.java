@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import gcp.sample.QuickStart;
+import gcp.sample.DocAIQuickStart;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Ignore;
@@ -62,7 +62,7 @@ public class QuickStartTest {
   public void testQuickStart()
       throws InterruptedException, ExecutionException, IOException, TimeoutException {
     // parse the GCS invoice as a form.
-    QuickStart.quickStart(PROJECT_ID, "us", PROCESSOR_ID, FILE_PATH);
+    DocAIQuickStart.quickStart(PROJECT_ID, "us", PROCESSOR_ID, FILE_PATH);
     String got = bout.toString();
 
     assertThat(got).contains("Paragraph text:");
