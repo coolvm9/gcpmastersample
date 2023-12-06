@@ -5,6 +5,10 @@
 gcloud config configurations create [NAME]
 
 
+https://cloud.google.com/docs/authentication/external/set-up-adc
+
+export GOOGLE_APPLICATION_CREDENTIALS="KEY_PATH"
+
 
 ## Auth
 ### Use these for making calls to google provided tools like gcloud, gsutil
@@ -17,8 +21,10 @@ gcloud auth revoke
 #### create service account
 gcloud iam service-accounts create SERVICE_ACCOUNT_NAME
 gcloud projects add-iam-policy-binding PROJECT_ID --member="serviceAccount:SERVICE_ACCOUNT_NAME@PROJECT_ID.iam.gserviceaccount.com" --role=ROLE
-#### Set this variable 
+#### Set this variable (on Linux/Mac)
 export GOOGLE_APPLICATION_CREDENTIALS=key.json
+export GOOGLE_APPLICATION_CREDENTIALS="KEY_PATH"
+
 
 #### Search order
 - ADC searches for credentials in the following locations:
