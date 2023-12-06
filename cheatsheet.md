@@ -8,7 +8,7 @@ gcloud config configurations create [NAME]
 
 ## Auth
 ### Use these for making calls to google provided tools like gcloud, gsutil
-gcloud auth application-default login 
+gcloud auth application-default login \n
 gcloud auth login
 gcloud auth revoke
 
