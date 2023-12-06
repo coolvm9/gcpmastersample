@@ -1,4 +1,6 @@
 # gcpmastersample
+PROJECT_ID = !(gcloud config get-value core/project)
+PROJECT_ID = PROJECT_ID[0]
 ## https://www.cloudskillsboost.google/focuses/22020?parent=catalog
 
 gcloud auth list
@@ -33,6 +35,7 @@ https://automl-proxy-kjz3fa56na-uc.a.run.app/v1
 }
 
 
-## https://www.cloudskillsboost.google/focuses/20069?parent=catalog
-
-
+BQ_LOCATION = 'US'
+REGION = 'us-central1'
+BQ_DATASET = f"{PROJECT_ID}:bqmlga4"
+!bq mk --location={BQ_LOCATION} --dataset {BQ_DATASET}
